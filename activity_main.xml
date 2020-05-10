@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:text="원하는 밥상을 선택!"
+        android:textSize="40sp" />
+
+    <RadioGroup
+        android:id="@+id/rGroup1"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+
+        <RadioButton
+            android:id="@+id/rButton1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="여보! 반찬 투정 좀 그만해!"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/rButton2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="딸! 다이어트한다면서 또 먹어?"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/rButton3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="내가 무슨 식단표 짜는 기계야?"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/rButton4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="혼자 살더라도 기품있게 챙겨먹어야지.."
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/BtnOK"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="선택 완료"
+            android:layout_gravity="center"/>
+
+    </RadioGroup>
+
+</LinearLayout>
