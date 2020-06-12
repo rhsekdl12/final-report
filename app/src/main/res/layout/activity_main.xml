@@ -4,15 +4,76 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
+
     <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="74dp"
+        android:layout_marginBottom="44dp"
+        android:gravity="center"
+        android:text="원하는 밥상을 선택!"
+        android:textColor="#F11010"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toTopOf="@+id/rGroup1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/rGroup1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="77dp"
+        app:layout_constraintBottom_toTopOf="@+id/BtnOK"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <RadioButton
+            android:id="@+id/rButton1"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:text="여보! 반찬 투정 좀 그만해!"
+            android:textSize="22sp" />
+
+        <RadioButton
+            android:id="@+id/rButton2"
+            android:layout_width="match_parent"
+            android:layout_height="91dp"
+            android:text="딸! 다이어트한다면서 또 먹어?"
+            android:textSize="22sp" />
+
+        <RadioButton
+            android:id="@+id/rButton3"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:text="내가 무슨 식단표 짜는 기계야?"
+            android:textSize="22sp" />
+
+        <RadioButton
+            android:id="@+id/rButton4"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:text="혼자 살더라도 기품있게 챙겨먹어야지.."
+            android:textSize="22sp" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/BtnOK"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:layout_gravity="center"
+        android:layout_marginBottom="73dp"
+        android:text="선택 완료"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rGroup1" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
