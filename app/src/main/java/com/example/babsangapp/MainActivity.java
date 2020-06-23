@@ -3,9 +3,12 @@ package com.example.babsangapp;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.view.animation.AlphaAnimation;
+import android.view.animation.Animation;
 import android.widget.Button;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
+import android.widget.TextView;
 
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
@@ -23,8 +26,7 @@ public class MainActivity extends AppCompatActivity {
 
         ActionBar actionBar = getSupportActionBar();
         assert actionBar != null;
-        actionBar.setTitle("밥상머리가 이게 뭐~니?");
-
+        actionBar.hide();
 
 
         rGroup1 = findViewById(R.id.rGroup1);
@@ -33,6 +35,14 @@ public class MainActivity extends AppCompatActivity {
         rButton3 = findViewById(R.id.rButton3);
         rButton4 = findViewById(R.id.rButton4);
         BtnOK = findViewById(R.id.BtnOK);
+        final TextView textView = findViewById(R.id.textView);
+        final Animation animation;
+        animation = new AlphaAnimation(0.0f,1.0f);
+        animation.setDuration(300);
+        animation.setStartOffset(20);
+        animation.setRepeatMode(Animation.REVERSE);
+        animation.setRepeatCount(Animation.INFINITE);
+        textView.startAnimation(animation);
 
         BtnOK.setOnClickListener(new View.OnClickListener() {
             @Override

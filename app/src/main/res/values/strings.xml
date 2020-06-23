@@ -1,3 +1,29 @@
 <resources>
     <string name="app_name">BabsangApp</string>
+    <string name="recipe">RECIPE</string>
+    <string name="menu">MENU</string>
+    <string name="todo">TODO</string>
+    <string name="basic">Basic (기본)</string>
+    <string name="text">여보! 반찬투정좀 그만해!</string>
+    <string name="diet">Diet (다이어트,건강)</string>
+    <string name="text2">딸! 다이어트한다면서 또 먹어?</string>
+    <string name="group">Group (단체,업소용,대용량)</string>
+    <string name="text3">어우! 내가 무슨 식단표 짜는 기계야?</string>
+    <string name="simple">Simple (간편,자취)</string>
+    <string name="text4">혼자살더라도 기품있게 먹어야지!</string>
+    <string name="text5">3가지 중 하나 선택 !</string>
+    <string name="gs25_25">GS25 (지에스25)</string>
+    <string name="cu">CU (씨유)</string>
+    <string name="_7_eleven">7-eleven (세븐일레븐)</string>
+    <string name="set_the_table">Set the Table (밥상머리가 이게 뭐~니?)</string>
+    <string name="click">원하는 메뉴를 선택 후 클릭!\n ↓</string>
+    <string name="next">NEXT</string>
+    <string name="zero">Basic (기본)</string>
+    <string name="first">여보! 반찬 투정 좀 그만해!</string>
+    <string name="second">Diet (다이어트,건강)</string>
+    <string name="third">딸! 다이어트 한다면서 또 먹어?</string>
+    <string name="forth">Group (단체,업소용,대용량)</string>
+    <string name="five">제발 단체로 몰려오지 마!</string>
+    <string name="six">Simple (간편,자취)</string>
+    <string name="seven">간편하게 먹더라도 특별하게!</string>
 </resources>

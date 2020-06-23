@@ -1,8 +1,6 @@
 
 |
 Lapp/src/androidTest/java/com/example/babsangapp/ExampleInstrumentedTest.java,1\9\19208da07e8d3c02c3a1cb9881651ab2e70b9fdb
-d
-4app/src/main/res/drawable/ic_launcher_background.xml,4\9\49845c622cb06d895975c7b1e3f943e320bce688
 h
 8app/src/main/res/drawable-v24/ic_launcher_foreground.xml,0\7\078508c831007ccb3938b355f0d30a8368f99a8d
 b
@@ -11,8 +9,6 @@ h
 8app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml,6\e\6ec7d34b130497a10dc92abcde9b313d370a89df
 R
 "app/src/main/res/values/colors.xml,9\6\969faa2a5d9f5e8390e958d2c07f2cfd54676e6b
-S
-#app/src/main/res/values/strings.xml,d\2\d2281fbb3027de2722081a53408dd77628bf080e
 R
 "app/src/main/res/values/styles.xml,f\7\f79cc2688e29fcbc286fda14ae07b27c9e83690f
 P
@@ -43,3 +39,12 @@ l
 <app/src/main/java/com/example/babsangapp/BiggerActivity.java,9\c\9c2bfed5ef9c1456a744d6dbffa9a2c49cba339f
 m
 =app/src/main/java/com/example/babsangapp/HealthyActivity.java,4\1\41d9e749d721ee275a037090b459fc137bf60f44
+7
+gradlew,5\b\5bbfa66edb4db3c7c33c5181f43510990d3307f9
+;
+gradlew.bat,2\a\2a45a911a8f1836b0b6c5b758962572012d8f8c3
+:
+
+.gitignore,a\5\a5cc2925ca8258af241be7e5b0381edf30266302
+L
+.idea/codeStyles/Project.xml,6\e\6ecd6000a7b6f4a2884412ff19f74193ed089648

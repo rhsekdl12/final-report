@@ -1,11 +1,16 @@
 package com.example.babsangapp;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
+import android.view.animation.AlphaAnimation;
+import android.view.animation.Animation;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
+import android.widget.TextView;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.ActionBar;
@@ -28,12 +33,6 @@ public class SoloActivity extends AppCompatActivity {
             R.raw.solo_seven1, R.raw.solo_seven2, R.raw.solo_seven3,R.raw.solo_seven4
     };
 
-    Button solobutton;
-    RadioGroup convenience;
-    RadioButton gs, cu, seveneleven;
-    ImageView imageView;
-
-
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -43,22 +42,52 @@ public class SoloActivity extends AppCompatActivity {
         assert actionBar != null;
         actionBar.setTitle("밥상머리가 이게 뭐~니?");
 
+        final ImageView imageView = findViewById(R.id.imageView); // 이미지 뷰
+        final Button button = findViewById(R.id.menuBtn); // 메뉴버튼
+        final Button recipeBtn = findViewById(R.id.recipeBtn); // 레시피버튼
+        final RadioGroup convenience = findViewById(R.id.convenience);
+        RadioButton gs = findViewById(R.id.gs);
+        RadioButton cu = findViewById(R.id.cu);
+        RadioButton seveneleven = findViewById(R.id.seveneleven);
+        final TextView textView = findViewById(R.id.textView2);
+        final Animation animation;
+        animation = new AlphaAnimation(0.0f,1.0f);
+        animation.setDuration(300);
+        animation.setStartOffset(20);
+        animation.setRepeatMode(Animation.REVERSE);
+        animation.setRepeatCount(Animation.INFINITE);
+        textView.startAnimation(animation);
 
 
-
-        solobutton = findViewById(R.id.solobutton);
-
-
-        convenience = findViewById(R.id.convenience);
-        gs = findViewById(R.id.gs);
-        cu = findViewById(R.id.cu);
-        seveneleven = findViewById(R.id.seveneleven);
-
-        imageView = findViewById(R.id.imageView1);
-
-        solobutton.setOnClickListener(new View.OnClickListener() {
+        gs.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                button.setVisibility(View.VISIBLE);
+                textView.clearAnimation();
+                textView.setVisibility(View.INVISIBLE);
+            }
+        });
+        cu.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                button.setVisibility(View.VISIBLE);
+                textView.clearAnimation();
+                textView.setVisibility(View.INVISIBLE);
+            }
+        });
+        seveneleven.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                button.setVisibility(View.VISIBLE);
+                textView.clearAnimation();
+                textView.setVisibility(View.INVISIBLE);
+            }
+        });
+
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                recipeBtn.setVisibility(View.VISIBLE);
                 switch (convenience.getCheckedRadioButtonId()) {
                     case R.id.gs:
                         int gsindex = (int) (Math.random() * 4);
@@ -78,7 +107,14 @@ public class SoloActivity extends AppCompatActivity {
                         imageView.setImageResource(sevenelevenmenu);
                         break;
                 }
+            }
+        });
 
+        recipeBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent recipe = new Intent(Intent.ACTION_VIEW, Uri.parse("https://linktr.ee/hwi_0204"));
+                startActivity(recipe);
             }
         });
 
